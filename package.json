@@ -1,0 +1,19 @@
+{
+	"name": "algolia",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node src/index.js",
+		"parse": "node src/parse",
+		"stich": "node src/stich"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"csv-parser": "^2.3.0",
+		"ora": "^3.4.0",
+		"puppeteer": "^1.16.0"
+	}
+}

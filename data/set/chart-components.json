@@ -1,0 +1,1565 @@
+[
+	{
+		"title": "Changing the Size and Type",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/size-and-type",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/size-and-type",
+		"description": "FusionCharts Suite XT lets you specify the dimensions of charts either in pixels or in percentage. You can also create a chart which resizes automatically.",
+		"keywords": []
+	},
+	{
+		"title": "Set Width and Height in Pixels",
+		"description": "To set the width and height you just need to provide the numeric values, and not add \"px\" at the end of such values. Refer to the code below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/size-and-type#set-width-and-height-in-pixels",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/size-and-type",
+		"keywords": ["width", "height"]
+	},
+	{
+		"title": "Set Width and Height in Percentage",
+		"description": "If you want to create a chart that automatically resizes when its parent container (another <div> or the entire window) resizes, here's how you can set the width and height of the chart:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/size-and-type#set-width-and-height-in-percentage",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/size-and-type",
+		"keywords": []
+	},
+	{
+		"title": "Dynamically Change Dimensions",
+		"description": "After you initialize a chart, you can change the dimensions dynamically, at client-side, through the JavaScript API resizeTo().",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/size-and-type#dynamically-change-dimensions",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/size-and-type",
+		"keywords": []
+	},
+	{
+		"title": "Dynamically Change Chart Type",
+		"description": "You can convert a column chart to a line chart at the click of a button, to compare trends in the data. The standard approach for this would be to create an instance of a line chart, pass it the same JSON data, and then render it.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/size-and-type#dynamically-change-chart-type",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/size-and-type",
+		"keywords": []
+	},
+	{
+		"title": "Borders and Backgrounds",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/border-and-background",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/border-and-background",
+		"description": "Background and Borders have a big impact on how the user perceives a chart. Learn to control border thickness, transparency, color and customize backgrounds with solid colors, gradients or images.",
+		"keywords": []
+	},
+	{
+		"title": "Show/Hide Chart Borders",
+		"description": "By default, the chart borders are visible for 2D charts. To hide the chart border, set the showBorder attribute to 0. Set this attribute to 1 (default) to show the border around the canvas of the chart.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/border-and-background#show-hide-chart-borders",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/border-and-background",
+		"keywords": ["showBorder"]
+	},
+	{
+		"title": "Customize Chart Borders",
+		"description": "To customize the chart border, the following attributes are used:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/border-and-background#customize-chart-borders",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/border-and-background",
+		"keywords": ["borderColor", "borderThickness", "borderAlpha"]
+	},
+	{
+		"title": "Use Gradient Background",
+		"description": "When using a gradient fill for the background, you can configure three aspects:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/border-and-background#use-gradient-background",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/border-and-background",
+		"keywords": ["bgRatio", "bgAngle"]
+	},
+	{
+		"title": "Use External Image",
+		"description": "You can specify an external image (GIF, JPEG or PNG only) as the background of the chart. Use the bgImage attribute to specify the URL of the external image as shown in the code below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/border-and-background#use-external-image",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/border-and-background",
+		"keywords": ["bgImage"]
+	},
+	{
+		"title": "Customize Background Image",
+		"description": "You can even customize the external image rendered as the chart background. To do so, the following attributes are used:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/border-and-background#customize-background-image",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/border-and-background",
+		"keywords": [
+			"bgImageApha",
+			"bgImageDisplayMode",
+			"bgImageHAlign",
+			"bgImageVAlign",
+			"bgImageScale"
+		]
+	},
+	{
+		"title": "Canvas",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/canvas",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/canvas",
+		"description": "With FusionCharts Suite XT, you can customize the canvas area of your chart. Chart canvas refers to the area in which the chart data is plotted.",
+		"keywords": []
+	},
+	{
+		"title": "Customize the Canvas Fill Color",
+		"description": "To customize the canvas fill color, the following attributes are used:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/canvas#customize-the-canvas-fill-color",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/canvas",
+		"keywords": ["canvasbgColor", "canvasBgAlpha"]
+	},
+	{
+		"title": "Show Canvas Border",
+		"description": "By default, the canvas border is not visible. To show the canvas border, set the showCanvasBorder attribute to 1.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/canvas#show-canvas-border",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/canvas",
+		"keywords": ["showCanvasBorder"]
+	},
+	{
+		"title": "Customize Canvas Border",
+		"description": "To customize the border, the following attributes are used:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/canvas#customize-canvas-border",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/canvas",
+		"keywords": [
+			"canvasBorderColor",
+			"canvasBorderThickness",
+			"canvasBorderAlpha"
+		]
+	},
+	{
+		"title": "Use Gradient Fill",
+		"description": "To set gradient fill for the canvas follow the steps given below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/canvas#use-gradient-fill",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/canvas",
+		"keywords": ["canvasBgRatio"]
+	},
+	{
+		"title": "Configure the 3D Effect",
+		"description": "The canvas can be configured to have a 3D effect. To do so, follow the steps given below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/canvas#configure-the-3d-effect",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/canvas",
+		"keywords": [
+			"showCanvasBg",
+			"showCanvasBase",
+			"canvasBaseColor",
+			"canvasBaseDepth",
+			"canvasBgDepth"
+		]
+	},
+	{
+		"title": "Titles and Axis Names",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/titles-and-axis-names",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/titles-and-axis-names",
+		"description": "This section talks about titles and axis names on the charts. One can insert caption, sub-caption, x-axis name and y-axis name in a chart",
+		"keywords": []
+	},
+	{
+		"title": "Set the Caption and Subcaption",
+		"description": "Specify the caption of the chart using the caption attribute, which accepts text values.\n\nSpecify the sub-caption of the chart using the subCaption attribute, which accepts text values.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/titles-and-axis-names#set-the-caption-and-subcaption",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/titles-and-axis-names",
+		"keywords": ["caption", "subCaption"]
+	},
+	{
+		"title": "Customize Font Properties",
+		"description": "Use the following attributes to customize the font color, size, formatting, etc., of the caption.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/titles-and-axis-names#customize-font-properties",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/titles-and-axis-names",
+		"keywords": [
+			"captionFont",
+			"captionFontColor",
+			"captionFontSize",
+			"captionFontBold",
+			"subCaptionFont",
+			"subCaptionFontColor",
+			"subCaptionFontSize",
+			"subCaptionFontBold"
+		]
+	},
+	{
+		"title": "Configure Caption Alignment",
+		"description": "Use the following attributes to configure caption alignment:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/titles-and-axis-names#configure-caption-alignment",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/titles-and-axis-names",
+		"keywords": [
+			"captionAlignment",
+			"captionOnTop",
+			"alignCaptionWithCanvas",
+			"captionHorizontalPadding"
+		]
+	},
+	{
+		"title": "Setting Axes Names",
+		"description": "Use the following attributes to configure names of axes:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/titles-and-axis-names#setting-axes-names",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/titles-and-axis-names",
+		"keywords": ["xAxisName", "yAxisName"]
+	},
+	{
+		"title": "Configure Font Cosmetic Properties",
+		"description": "Configure cosmetic properties like font, color, and size of the X-axis name using the attributes given below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/titles-and-axis-names#configure-font-cosmetic-properties",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/titles-and-axis-names",
+		"keywords": [
+			"xAxisNameFont",
+			"xAxisNameFontColor",
+			"xAxisNameFontSize",
+			"xAxisNameFontBold",
+			"xAxisNameFontItalic",
+			"yAxisNameFont",
+			"yAxisNameFontColor",
+			"yAxisNameFontSize",
+			"yAxisNameFontBold",
+			"yAxisNameFontItalic"
+		]
+	},
+	{
+		"title": "Configure Cosmetic Properties of Borders of the Names",
+		"description": "Use the following attributes to configure cosmetic properties of the borders around names of x-axis:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/titles-and-axis-names#configure-cosmetic-properties-of-borders-of-the-names",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/titles-and-axis-names",
+		"keywords": [
+			"xAxisNameBorderColor",
+			"xAxisNameBorderAlpha",
+			"xAxisNameBorderPadding",
+			"xAxisNameBorderRadius",
+			"xAxisNameBorderThickness",
+			"xAxisNameBorderDashed",
+			"xAxisNameBorderDashLen",
+			"xAxisNameBorderDashGap",
+			"yAxisNameBorderColor",
+			"yAxisNameBorderAlpha",
+			"yAxisNameBorderPadding",
+			"yAxisNameBorderRadius",
+			"yAxisNameBorderThickness",
+			"yAxisNameBorderDashed",
+			"yAxisNameBorderDashLen",
+			"yAxisNameBorderDashGap"
+		]
+	},
+	{
+		"title": "Configure the Font Opacity and Background",
+		"description": "Use the following attributes to configure the background for names of x-axis:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/titles-and-axis-names#configure-the-font-opacity-and-background",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/titles-and-axis-names",
+		"keywords": [
+			"xAxisNameFontAlpha",
+			"xAxisNameBgColor",
+			"xAxisNameBgAlpha",
+			"xAxisNameAlpha",
+			"yAxisNameFontAlpha",
+			"yAxisNameBgColor",
+			"yAxisNameBgAlpha",
+			"yAxisNameAlpha"
+		]
+	},
+	{
+		"title": "Configure Font Properties for Y-axis Names",
+		"description": "Use the following attributes to configure font properties of a multi-series combination 2D chart with the primary and secondary y-axis names italicized:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/titles-and-axis-names#configure-font-properties-for-y-axis-names",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/titles-and-axis-names",
+		"keywords": [
+			"pYAxisName",
+			"sYAxisName",
+			"pYAxisNameFont",
+			"sYAxisNameFont",
+			"pYAxisNameFontColor",
+			"sYAxisNameFontColor",
+			"pYAxisNameFontSize",
+			"sYAxisNameFontSize",
+			"pYAxisNameFontBold",
+			"sYAxisNameFontBold",
+			"pYAxisNameFontItalic",
+			"sYAxisNameFontItalic",
+			"pYAxisNameFontAlpha",
+			"sYAxisNameFontAlpha"
+		]
+	},
+	{
+		"title": "Configure Background Properties of Y-axis Names",
+		"description": "Use the following attributes to set a semi-transparent background in a chosen color for the primary and secondary y-axis names of a multi-series, combination 2D chart:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/titles-and-axis-names#configure-background-properties-of-y-axis-names",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/titles-and-axis-names",
+		"keywords": [
+			"pYAxisNameAlpha",
+			"sYAxisNameAlpha",
+			"pYAxisNameBgColor",
+			"sYAxisNameBgColor",
+			"pYAxisNameBgAlpha",
+			"sYAxisNameBgAlpha"
+		]
+	},
+	{
+		"title": "Configure the Border Properties of Y-axis Names",
+		"description": "Use the following attributes to customize the primary and secondary y-axis names for a multi-series, combination 2D chart with a dashed border and a chosen color:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/titles-and-axis-names#configure-the-border-properties-of-y-axis-names",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/titles-and-axis-names",
+		"keywords": [
+			"pYAxisNameBorderColor",
+			"sYAxisNameBorderColor",
+			"pYAxisNameBorderAlpha",
+			"sYAxisNameBorderAlpha",
+			"pYAxisNameBorderPadding",
+			"sYAxisNameBorderPadding",
+			"pYAxisNameBorderRadius",
+			"sYAxisNameBorderRadius",
+			"pYAxisNameBorderThickness",
+			"sYAxisNameBorderThickness",
+			"pYAxisNameBorderDashed",
+			"sYAxisNameBorderDashed",
+			"pYAxisNameBorderDashLen",
+			"sYAxisNameBorderDashLen",
+			"pYAxisNameBorderDashGap",
+			"sYAxisNameBorderDashGap"
+		]
+	},
+	{
+		"title": "Data Plot",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-plot",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-plot",
+		"description": "Data plot is column in column chart, line in line chart. You can enhance the way your data plot looks with the help of colors, gradients and hover effects",
+		"keywords": []
+	},
+	{
+		"title": "Color individual data plots",
+		"description": "You can specify a custom color for each data plot. Specify the hex code of the color using the color attribute within dataunder the chart object.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-plot#color-individual-data-plots",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-plot",
+		"keywords": ["color"]
+	},
+	{
+		"title": "Color different Data Plots",
+		"description": "You can also specify a comma separated list of colors for use in different data series (or in case of single series charts, different data plots). The colors are selected from the list in a round-robin way for each data series.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-plot#color-different-data-plots",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-plot",
+		"keywords": ["paletteColors"]
+	},
+	{
+		"title": "Add Gradient Effect to Data Plots",
+		"description": "You can apply a global gradient color for an entire data plot. To do so follow the steps given below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-plot#add-gradient-effect-to-data-plots",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-plot",
+		"keywords": ["usePlotGradientColor", "plotGradientColor"]
+	},
+	{
+		"title": "Customize Gradient Properties",
+		"description": "Apart from a basic gradient effect, you can also customize the gradient angle and fill ratio for a data plot. To customize the gradient properties, the following attributes are used:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-plot#customize-gradient-properties",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-plot",
+		"keywords": ["plotFillAngle", "plotFillRatio", "plotFillAlpha"]
+	},
+	{
+		"title": "Show/Hide Plot Border",
+		"description": "Every data plot (column, area, or pie) has a border by default. Set the showPlotBorder to 0 to hide the plot border.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-plot#show-hide-plot-border",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-plot",
+		"keywords": ["showPlotBorder"]
+	},
+	{
+		"title": "Dashed data Plot Border",
+		"description": "You can set a dashed border for the data plot and can also customize dash-length and the gap between dashes. To do so, the following attributes are used:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-plot#dashed-data-plot-border",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-plot",
+		"keywords": [
+			"plotBorderDashed",
+			"plotBorderDashLen",
+			"plotBorderDashGap",
+			"plotBorderThickness",
+			"plotBorderColor",
+			"dashed",
+			"dashLen",
+			"dashGap"
+		]
+	},
+	{
+		"title": "Round Edges",
+		"description": "You can configure data plots with rounded edges in 2D Column or Bar charts. Set the useRoundEdges attribute to 1.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-plot#round-edges",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-plot",
+		"keywords": ["useRoundEdges"]
+	},
+	{
+		"title": "Plot Hover Effects",
+		"description": "You can display hover effects for data plots to add an interactive element to the charts. To apply the hover effects at the chart level, the following attributes are used:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-plot#plot-hover-effects",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-plot",
+		"keywords": [
+			"plotHoverEffect",
+			"plotFillHoverColor",
+			"plotFillHoverAlpha",
+			"plotBorderHoverColor",
+			"plotBorderHoverAlpha",
+			"plotBorderHoverThickness",
+			"plotBorderHoverDashed",
+			"plotBorderHoverDashLen",
+			"plotBorderHoverDashGap",
+			"hoverColor",
+			"hoverAlpha",
+			"borderHoverColor",
+			"borderHoverAlpha",
+			"borderHoverThickness",
+			"borderHoverDashed",
+			"borderHoverDashLen",
+			"borderHoverDashGap",
+			"hoverGradientColor",
+			"hoverRatio",
+			"hoverAngle"
+		]
+	},
+	{
+		"title": "Display Customized Data Labels",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-labels",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-labels",
+		"description": "Customize the way data labels look like on your Charts and Graphs. Learn how to use the 5 modes of showing labels - Auto, Wrap, Stagger, Rotate and None.",
+		"keywords": []
+	},
+	{
+		"title": "Data Label Display Modes",
+		"description": "You can configure the arrangement and display properties for data labels using the labelDisplay attribute. There are 5 display modes available (auto, wrap, stagger, rotate and none). We will discuss each mode respectively.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-labels#data-label-display-modes",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-labels",
+		"keywords": [
+			"labelDisplay",
+			"useEllipsesWhenOverflow",
+			"rotateLabels",
+			"maxLabelWidthPercent",
+			"slantLabel",
+			"xAxisLabelMode",
+			"staggerLines",
+			"labelstep"
+		]
+	},
+	{
+		"title": "Show/Hide Labels for all Dataplots",
+		"description": "To hide the data labels set the showLabels attribute to 0 within the chart object. Refer to the code below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-labels#show-hide-labels-for-all-dataplots",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-labels",
+		"keywords": ["showLabels"]
+	},
+	{
+		"title": "Hide Specific Data Labels",
+		"description": "By default, all the data labels are displayed. You can opt to hide specific data values using the showLabel attribute within data under chart object.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-labels#hide-specific-data-labels",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-labels",
+		"keywords": ["showLabel"]
+	},
+	{
+		"title": "Label Management: Line and Area Charts",
+		"description": "With label management, you can adjust the canvas padding (the space between the canvas border and the position where the data plot begins and ends) to accommodate long labels in line and area charts. This ensures that the first and last x-axis labels are not rendered outside the canvas border, and the labels don't overlap each other.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-labels#label-management-line-and-area-charts",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-labels",
+		"keywords": ["canvasPadding"]
+	},
+	{
+		"title": "Customize Data Label Properties",
+		"description": "You can customize the cosmetic properties of data labels such as font, border, background, and alpha.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-labels#customize-data-label-properties",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-labels",
+		"keywords": [
+			"labelFont",
+			"labelFontColor",
+			"labelFontSize",
+			"labelFontBold",
+			"labelFontItalic",
+			"labelAlpha"
+		]
+	},
+	{
+		"title": "Configure Height of the Data Label",
+		"description": "Shown below is a chart with some very long data labels, where the data plots are getting reduced to a fraction of the chart.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-labels#configure-height-of-the-data-label",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-labels",
+		"keywords": ["maxLabelHeight"]
+	},
+	{
+		"title": "Add Links to Data Labels",
+		"description": "You can add links to the data labels. Set the link you want to add to the data label using the labelLink attribute. Refer to the code below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-labels#add-links-to-data-labels",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-labels",
+		"keywords": ["labelLink"]
+	},
+	{
+		"title": "Data Values",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-values",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-values",
+		"description": "The values of data points in a chart are essential to gather insights. Learn how to customize the values by changing the labels, colors, orientation, font, and much more.",
+		"keywords": []
+	},
+	{
+		"title": "Configure Text Labels instead of Numeric Data Values",
+		"description": "Instead of displaying numeric data values, you can use text labels to denote data values for each data item. Specify the text you want to display using the displayValue attribute under data within the particular data plot. Refer to the code below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-values#configure-text-labels-instead-of-numeric-data-values",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-values",
+		"keywords": ["displayValue"]
+	},
+	{
+		"title": "Rotate Data Values",
+		"description": "By default, the data values appear vertically as shown in the chart below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-values#rotate-data-values",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-values",
+		"keywords": ["rotateValues"]
+	},
+	{
+		"title": "Display Data Values outside Columns",
+		"description": "By default, the data values are displayed within the column data plots. Set the placeValuesInside attribute to 1 and display the data values inside the column data plots. Refer to the code below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-values#display-data-values-outside-columns",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-values",
+		"keywords": ["placeValuesInside"]
+	},
+	{
+		"title": "Show/Hide Data Values",
+		"description": "By default, all the data values are hidden. Set the showValues attribute to 1 under the chart object to display all the data values. Refer to the code below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-values#show-hide-data-values",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-values",
+		"keywords": ["showValues", "showValue"]
+	},
+	{
+		"title": "Customize Data Value Properties",
+		"description": "You can customize the data value properties like font, border, background, and alpha.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-values#customize-data-value-properties",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/data-values",
+		"keywords": [
+			"valueFont",
+			"valueFontColor",
+			"valueFontSize",
+			"valueFontBold",
+			"valueFontItalic",
+			"valueFontAlpha"
+		]
+	},
+	{
+		"title": "Number Format",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/number-format",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/number-format",
+		"description": "The section talks about basics of number formatting/scaling. Examples for configuring decimal places by rounding off with trailing zeroes is also possible",
+		"keywords": []
+	},
+	{
+		"title": "Round off Decimal Places",
+		"description": "To round off the decimals for all the numbers on the chart set the number of decimal places to which all the numbers on the chart will be rounded off to using the decimals attribute. Valid range is from 0 to 10.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/number-format#round-off-decimal-places",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/number-format",
+		"keywords": ["decimals", "yAxisValueDecimals", "xAxisValueDecimals"]
+	},
+	{
+		"title": "Round off with Trailing Zeroes",
+		"description": "Use the following attributes to force trailing zeroes:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/number-format#round-off-with-trailing-zeroes",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/number-format",
+		"keywords": [
+			"forceDecimals",
+			"forceYAxisValueDecimals",
+			"forceXAxisValueDecimals"
+		]
+	},
+	{
+		"title": "Enable/Disable Automatic Formatting of Numbers",
+		"description": "FusionCharts XT automatically formats numbers displayed on charts. Use the following attributes to disable automatic number formatting:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/number-format#enable-disable-automatic-formatting-of-numbers",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/number-format",
+		"keywords": [
+			"formatNumber",
+			"yFormatNumber",
+			"xFormatNumber",
+			"formatNumberScale",
+			"yFormatNumberScale",
+			"xFormatNumberScale"
+		]
+	},
+	{
+		"title": "Customize Thousand and Decimal Separator",
+		"description": "You can customize the thousand and decimal separator characters from the default , (comma) and . (dot) respectively. To do so, use the attributes given below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/number-format#customize-thousand-and-decimal-separator",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/number-format",
+		"keywords": [
+			"decimalSeparator",
+			"thousandSeparator",
+			"inDecimalSeparator",
+			"inThousandSeparator"
+		]
+	},
+	{
+		"title": "Configure Thousand Separator Position",
+		"description": "Specify the number of digits after which the thousand separator character should be placed, using the thousandSeparatorPosition attribute. If you set its value to 0, the attribute will take its default value, which is 3, and places the separator after every three digits starting from the right.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/number-format#configure-thousand-separator-position",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/number-format",
+		"keywords": ["thousandSeparatorPosition"]
+	},
+	{
+		"title": "Add Number Prefix and Suffix",
+		"description": "To customize the prefix and suffix of the numbers on the chart, use the following attributes:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/number-format#add-number-prefix-and-suffix",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/number-format",
+		"keywords": [
+			"sNumberPrefix",
+			"xNumberPrefix",
+			"yNumberPrefix",
+			"NumberSuffix",
+			"xNumberSuffix",
+			"yNumberSuffix",
+			"sNumberPrefix",
+			"forceSYAxisValueDecimals"
+		]
+	},
+	{
+		"title": "Shorten Data Values",
+		"description": "Shorten numbers displayed on charts by scaling them, with commonly used scales like K, M, etc..You can also define custom scales for numbers and then apply it to all numbers on the chart.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/number-format#shorten-data-values",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/number-format",
+		"keywords": [
+			"formatNumberScale",
+			"yFormatNumberScale",
+			"xFormatNumberScale"
+		]
+	},
+	{
+		"title": "Add Billions to Default Scaling",
+		"description": "FusionCharts Suite XT does not have the scaling for billions defined. You have to explicitly modify the number scaling to add billions.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/number-format#add-billions-to-default-scaling",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/number-format",
+		"keywords": ["numberScaleValue", "numberScaleUnit"]
+	},
+	{
+		"title": "Use Recursive Number Scaling",
+		"description": "Recursive number scaling comes into the picture when you have number scales defined for your chart. With this, you can display the chart data better by breaking up the predefined number scale into smaller sections. For example, in a chart where time is being plotted, you can display 3.87 days as 3 days, 20 hours, 52 minutes and 25 seconds.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/number-format#use-recursive-number-scaling",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/number-format",
+		"keywords": [
+			"scaleRecursively",
+			"maxScaleRecursion",
+			"xScaleRecursively",
+			"xMaxScaleRecursion",
+			"xScaleSeparator",
+			"xAxisLabelMode",
+			"sScaleRecursively",
+			"sMaxScaleRecursion",
+			"sScaleSeparator"
+		]
+	},
+	{
+		"title": "Fonts",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/fonts",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/fonts",
+		"description": "Font properties for a chart include the font family, font size, and font color for the text rendered inside and outside the chart canvas.",
+		"keywords": []
+	},
+	{
+		"title": "Customize Base Font Group",
+		"description": "The base font group is used to customize the font properties for the text rendered on the chart itself. To customize the base fonts follow the steps given below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/fonts#customize-base-font-group",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/fonts",
+		"keywords": ["baseFont", "baseFontSize", "baseFontColor"]
+	},
+	{
+		"title": "Outside Canvas Base Font Group",
+		"description": "This is used to customize font properties for the text placed outside the chart canvas. To do so, follow the steps given below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/fonts#outside-canvas-base-font-group",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/fonts",
+		"keywords": ["outCnvBaseFont", "outCnvBaseFontSize", "outCnvBaseFontColor"]
+	},
+	{
+		"title": "Chart Palettes",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-palettes",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-palettes",
+		"description": "FusionCharts Suite XT provides five chart color palettes. Palette theme configures colors of these chart elements.",
+		"keywords": ["palette"]
+	},
+	{
+		"title": "Predefined Palettes",
+		"description": "Palette 1 is the default chart palette. A chart with palette set as 1 looks as below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-palettes#predefined-palettes",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-palettes",
+		"keywords": []
+	},
+	{
+		"title": "Chart Limits",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-limits",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-limits",
+		"description": "Chart limits are the minimum and maximum y-axis values. While FusionCharts Suite XT can automatically calculate the best chart limits.",
+		"keywords": []
+	},
+	{
+		"title": "Set Chart Limits Explicitly",
+		"description": "You can set custom y-axis limits as per your requirement. To do so, the following attributes are used:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-limits#set-chart-limits-explicitly",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-limits",
+		"keywords": ["yAxisMinValue", "yAxisMaxValue"]
+	},
+	{
+		"title": "Set Y-axis Minimum value",
+		"description": "You can choose to set the y-axis lower limit to 0 (zero) or let the y-axis lower limit adapt itself to the values provided to the chart. To do so, set the setAdaptiveYMin attribute to 1. By default, this attribute is set to 0.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-limits#set-y-axis-minimum-value",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-limits",
+		"keywords": ["setAdaptiveYMin"]
+	},
+	{
+		"title": "Set Axis Limits for Dual Y-axis Charts",
+		"description": "In case of dual y-axis charts, you can set custom y-axis limits for both the primary and secondary y-axes. To do so, the following attributes are used:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-limits#set-axis-limits-for-dual-y-axis-charts",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-limits",
+		"keywords": [
+			"pYAxisMinValue",
+			"pYAxisMaxValue",
+			"sYAxisMinValue",
+			"sYAxisMaxValue"
+		]
+	},
+	{
+		"title": "Set same Axis Limits for Primary and Secondary Y-axes",
+		"description": "Configure your charts so that the chart limits for the primary and secondary y-axes are synced. For charts with static data, this can be done by specifying the minimum and maximum y-axis values, but this won't work for dynamic chart data. For dynamic charts, set the syncAxisLimits attribute to 1.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-limits#set-same-axis-limits-for-primary-and-secondary-y-axes",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-limits",
+		"keywords": ["syncAxisLimits"]
+	},
+	{
+		"title": "Show/Hide Y-axis Values",
+		"description": "By default, all the y-axis values are visible. You can hide all the y-axis values or only the maximum and minimum y-axis values showing the rest. To do so, the following attributes are used:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-limits#show-hide-y-axis-values",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-limits",
+		"keywords": ["showYAxisValues", "showLimits"]
+	},
+	{
+		"title": "Div Lines and Grids",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/div-lines-and-grids",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/div-lines-and-grids",
+		"description": "Divisional lines are horizontal lines running along the canvas enabling easier visual reference of plot values against the y-axis",
+		"keywords": []
+	},
+	{
+		"title": "Customize the Number of Divisional Lines",
+		"description": "By default, the divisional lines are automatically adjusted. You can opt to explicitly specify the minimum and maximum values for the y-axis, as well as the number of divisional lines.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/div-lines-and-grids#customize-the-number-of-divisional-lines",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/div-lines-and-grids",
+		"keywords": ["adjustDiv", "yAxisMinValue", "yAxisMaxValue", "numDivLines"]
+	},
+	{
+		"title": "Customize the Display of Divisional Lines",
+		"description": "To customize the display of divisional lines follow the steps given below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/div-lines-and-grids#customize-the-display-of-divisional-lines",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/div-lines-and-grids",
+		"keywords": ["divLineColor", "divLineThickness", "divLineAlpha"]
+	},
+	{
+		"title": "Dashed Divisional Lines",
+		"description": "You can render the divisional lines as dashed lines, instead of the default continuous lines. To do so follow the steps given below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/div-lines-and-grids#dashed-divisional-lines",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/div-lines-and-grids",
+		"keywords": ["divLineDashed", "divLineDashLen", "divLineDashGap"]
+	},
+	{
+		"title": "Customize Horizontal Grid Bands",
+		"description": "To further aid data visualization, you can color alternate spaces between grid lines to create grid bands.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/div-lines-and-grids#customize-horizontal-grid-bands",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/div-lines-and-grids",
+		"keywords": [
+			"showAlternateHGridColor",
+			"alternateHGridColor",
+			"alternateHGridAlpha"
+		]
+	},
+	{
+		"title": "Vertical Div Lines",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/vertical-div-lines",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/vertical-div-lines",
+		"description": "Vertical div lines are vertical lines running through the canvas in a chart. These lines help in relating the data to its respective label",
+		"keywords": []
+	},
+	{
+		"title": "Show Vertical Divisional Lines",
+		"description": "By default, vertical divisional lines are not rendered in a chart. To render vertical divisional lines, specify the number of divisional lines you want to display using the numVDivLines attribute.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/vertical-div-lines#show-vertical-divisional-lines",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/vertical-div-lines",
+		"keywords": ["numVDivLines"]
+	},
+	{
+		"title": "Customize the Visuals of Vertical Divisional Lines",
+		"description": "To customize the visuals of the divisional lines use the following attributes:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/vertical-div-lines#customize-the-visuals-of-vertical-divisional-lines",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/vertical-div-lines",
+		"keywords": ["vDivLineColor", "vDivLineThickness", "vDivLineAlpha"]
+	},
+	{
+		"title": "Show Vertical Grid Bands",
+		"description": "Vertical grid bands, by default, do not appear between the vertical divisional lines.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/vertical-div-lines#show-vertical-grid-bands",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/vertical-div-lines",
+		"keywords": ["showAlternateVGridColor"]
+	},
+	{
+		"title": "Zero Plane",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/zero-plane",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/zero-plane",
+		"description": "Zero plane is a plane separating the positive/negative numbers on the y-axis. The zero plane appears in the column, line, scatter, bubble charts.",
+		"keywords": []
+	},
+	{
+		"title": "Show/Hide the Zero Plane",
+		"description": "By default, the zero plane is rendered in any chart that plots both negative and positive values. To hide the zero plane, set the showZeroPlane attribute to 0.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/zero-plane#show-hide-the-zero-plane",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/zero-plane",
+		"keywords": ["showZeroPlane"]
+	},
+	{
+		"title": "Customize Zero Plane in 2D chart",
+		"description": "To customize the zero plane in a 2D chart, the following attributes are used:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/zero-plane#customize-zero-plane-in-2d-chart",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/zero-plane",
+		"keywords": ["zeroPlaneColor", "zeroPlaneThickness", "zeroPlaneAlpha"]
+	},
+	{
+		"title": "Customize Zero Plane in 3D chart",
+		"description": "To customize the zero plane in a 3D chart, the following attributes are used:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/zero-plane#customize-zero-plane-in-3d-chart",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/zero-plane",
+		"keywords": ["zeroPlaneShowBorder", "zeroPlaneBorderColor"]
+	},
+	{
+		"title": "Vertical Zero Plane",
+		"description": "In case of XY plot charts, zero plane appears vertically at zero x-position on canvas, when negative data is being shown on the chart.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/zero-plane#vertical-zero-plane",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/zero-plane",
+		"keywords": [
+			"showVZeroPlane",
+			"vZeroPlaneColor",
+			"vZeroPlaneThickness",
+			"vZeroPlaneAlpha",
+			"showZeroPlaneValue"
+		]
+	},
+	{
+		"title": "Show/Hide the Zero Plane Value",
+		"description": "By default, the data value (0) where the zero plane exists on the y-axis is displayed. To hide the zero plane value set the showZeroPlaneValue attribute to '0'.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/zero-plane#show-hide-the-zero-plane-value",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/zero-plane",
+		"keywords": []
+	},
+	{
+		"title": "Trend Lines and Zones",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/trend-lines-and-zones",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/trend-lines-and-zones",
+		"description": "Trend lines are customisable reference horizontal or vertical lines which aid in interpretation of data. Section talks about trend lines and zones",
+		"keywords": []
+	},
+	{
+		"title": "Add Tool-text to a Trend Line",
+		"description": "You can specify a custom tool-text which will be rendered when the mouse pointer hovers over the trend line. To do so, specify the text you want to display using the toolText attribute.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/trend-lines-and-zones#add-tool-text-to-a-trend-line",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/trend-lines-and-zones",
+		"keywords": ["toolText"]
+	},
+	{
+		"title": "Add Trend Zones",
+		"description": "Trend zones are similar to trend lines, except that they mark out an entire zone rather than just a line. Use the following attributes to create trend zones:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/trend-lines-and-zones#add-trend-zones",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/trend-lines-and-zones",
+		"keywords": ["isTrendZone", "startValue", "endValue"]
+	},
+	{
+		"title": "Customize Trend Lines and Trend Zones",
+		"description": "Use the following attributes to customize trend lines and trend zones:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/trend-lines-and-zones#customize-trend-lines-and-trend-zones",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/trend-lines-and-zones",
+		"keywords": ["color", "thickness", "alpha"]
+	},
+	{
+		"title": "Customize the Trend Line Display Value Text",
+		"description": "Use the attributes given below to customize the trend line display value text:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/trend-lines-and-zones#customize-the-trend-line-display-value-text",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/trend-lines-and-zones",
+		"keywords": [
+			"trendValueFont",
+			"trendValueFontSize",
+			"trendValueFontBold",
+			"trendValueFontItalic",
+			"trendValueAlpha",
+			"trendValueBgColor",
+			"trendValueBgAlpha",
+			"trendValueBorderColor",
+			"trendValueBorderAlpha",
+			"trendValueBorderPadding",
+			"trendValueBorderRadius",
+			"trendValueBorderThickness",
+			"trendValueBorderDashed",
+			"trendValueBorderDashLen",
+			"trendValueBorderDashGap"
+		]
+	},
+	{
+		"title": "Add Dashed Trend Lines",
+		"description": "Use the attributes given below to render a dashed trend line instead of the continuous line:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/trend-lines-and-zones#add-dashed-trend-lines",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/trend-lines-and-zones",
+		"keywords": ["dashed", "dashLen", "dashGap"]
+	},
+	{
+		"title": "Add Slanted Trend Lines",
+		"description": "Use the following attributes to render a slanted trend line:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/trend-lines-and-zones#add-slanted-trend-lines",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/trend-lines-and-zones",
+		"keywords": ["startValue", "endValue"]
+	},
+	{
+		"title": "Configure the Trend Line Label",
+		"description": "Show the trend line label to the right of the chart canvas by setting the value of valueOnRight attribute to 1.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/trend-lines-and-zones#configure-the-trend-line-label",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/trend-lines-and-zones",
+		"keywords": ["valueOnRight"]
+	},
+	{
+		"title": "Add Trend Lines for a Dual Y-axis Chart",
+		"description": "Since a dual y-axis chart has 2 y-axes, you need to define both the trend line and the axis on which the line will be defined. Set the value of the parentYAxis attribute of the line object to S, to show the trend line on the secondary axis.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/trend-lines-and-zones#add-trend-lines-for-a-dual-y-axis-chart",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/trend-lines-and-zones",
+		"keywords": ["parentYAxis"]
+	},
+	{
+		"title": "Anchors and Lines",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/anchors-and-lines",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/anchors-and-lines",
+		"description": "Anchors help to identify the data point better in the chart. They also show a tooltip showing the data plot details when the mouse is hovered over them",
+		"keywords": []
+	},
+	{
+		"title": "Hide Anchors",
+		"description": "By default, the anchors and their corresponding tooltips are displayed. To hide the anchors set the drawAnchors attribute to 0 as shown in the code below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/anchors-and-lines#hide-anchors",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/anchors-and-lines",
+		"keywords": ["drawAnchors"]
+	},
+	{
+		"title": "Customize Anchor Properties",
+		"description": "To customize the properties of the anchors, the following attributes are used:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/anchors-and-lines#customize-anchor-properties",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/anchors-and-lines",
+		"keywords": [
+			"anchorSides",
+			"anchorRadius",
+			"anchorBorderColor",
+			"anchorBorderThickness",
+			"anchorBgColor",
+			"anchorBgAlpha"
+		]
+	},
+	{
+		"title": "Customize Anchors for specific Data Points",
+		"description": "To highlight a specific anchor, customize the cosmetics for only that particular anchor.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/anchors-and-lines#customize-anchors-for-specific-data-points",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/anchors-and-lines",
+		"keywords": []
+	},
+	{
+		"title": "Add External Images",
+		"description": "You can add external images in place of anchors for line and area charts. This allows you to use different images for each anchor and lets you highlight special values. To do so, you have to set the attributes in individual data object. The attributes used are:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/anchors-and-lines#add-external-images",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/anchors-and-lines",
+		"keywords": ["anchorImageUrl", "anchorImageAlpha", "anchorImageScale"]
+	},
+	{
+		"title": "Cross Line",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/cross-line",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/cross-line",
+		"description": "Cross line is a vertical line/area used as quick reference for the data plots. The tooltip that appears is consolidated with all the information required.",
+		"keywords": []
+	},
+	{
+		"title": "Show/Hide the Cross Line",
+		"description": "By default, the cross line is turned off. To show the crossline set the drawCrossLine attribute to 1. Refer to the code below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/cross-line#show-hide-the-cross-line",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/cross-line",
+		"keywords": ["drawCrossLine"]
+	},
+	{
+		"title": "Customize Cross Line Color",
+		"description": "Specify the hex code of the cross line color using the crossLineColor attribute. Refer to the code below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/cross-line#customize-cross-line-color",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/cross-line",
+		"keywords": [
+			"crossLineColor",
+			"crossLineAlpha",
+			"crossLineAnimation",
+			"crossLineAnimationDuration"
+		]
+	},
+	{
+		"title": "Set Tooltip Background Color",
+		"description": "A tooltip is a common element, used to display information whenever you hover over a particular data point. A consolidated tooltip has been introduced with the cross line which can be used to get the detailed information of the hovered plots in a multi-series chart.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/cross-line#set-tooltip-background-color",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/cross-line",
+		"keywords": ["plotColorInTooltip", "tooltipGrayOutColor", "toolTipBgColor"]
+	},
+	{
+		"title": "Customize Tooltip Border",
+		"description": "To customize the tooltip border, the following attributes are used:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/cross-line#customize-tooltip-border",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/cross-line",
+		"keywords": ["toolTipBorderColor", "toolTipBorderThickness"]
+	},
+	{
+		"title": "Set Separator Character for Tooltip",
+		"description": "Specify the character to separate the name and the value displayed in the tooltip using the toolTipSepChar attribute. Refer to the code below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/cross-line#set-separator-character-for-tooltip",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/cross-line",
+		"keywords": ["toolTipSepChar"]
+	},
+	{
+		"title": "Show/Hide Tooltip Shadow",
+		"description": "By default, the tooltip shadow is visible. To hide the tooltip shadow set the showTooltipShadow attribute to 0. Refer to the code below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/cross-line#show-hide-tooltip-shadow",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/cross-line",
+		"keywords": ["showTooltipShadow"]
+	},
+	{
+		"title": "Tooltips",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tool-tips",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tool-tips",
+		"description": "A tooltip is displayed when the mouse is hovered over a particular data point. This article talk about customizing the tooltip.",
+		"keywords": []
+	},
+	{
+		"title": "Show/Hide Tooltips",
+		"description": "By default, the tooltip is displayed. To hide the tool tip set the showToolTip attribute to 0.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tool-tips#show-hide-tooltips",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tool-tips",
+		"keywords": ["showToolTip"]
+	},
+	{
+		"title": "Customize Tooltips",
+		"description": "To customize the tooltip use the following attributes:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tool-tips#customize-tooltips",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tool-tips",
+		"keywords": [
+			"toolTipBGColor",
+			"toolTipBorderColor",
+			"ToolTipSepChar",
+			"showTooltipShadow"
+		]
+	},
+	{
+		"title": "Display Multiline Tooltip Text",
+		"description": "By default, a tooltip shows the data item name and value in a single line of text. However, if you want to display more information on the tooltip, you can use the attribute tooltext to show the text in multiline format.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tool-tips#display-multiline-tooltip-text",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tool-tips",
+		"keywords": ["tooltext"]
+	},
+	{
+		"title": "Introduction to Macros",
+		"description": "FusionCharts Suite XT 3.4 introduces macros to configure dynamic and contextual content in tooltips. A macro is an instruction recorded using a combination of characters for a specific purpose.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tool-tips#introduction-to-macros",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tool-tips",
+		"keywords": []
+	},
+	{
+		"title": "Vertical Lines",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/vertical-lines",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/vertical-lines",
+		"description": "Vertical separator lines or vlines are elements that can differentiate between data blocks in a chart. They can be placed between any two data points",
+		"keywords": []
+	},
+	{
+		"title": "Set Vertical Lines",
+		"description": "By default, the vertical lines do not appear. To display a vertical line follow the steps below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/vertical-lines#set-vertical-lines",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/vertical-lines",
+		"keywords": ["vLine", "label", "linePosition"]
+	},
+	{
+		"title": "Show Label Borders",
+		"description": "To add borders to the label set the showVLineLabelBorder to 1 within the chart object. This attribute is used to show borders for the labels of all the vertical lines.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/vertical-lines#show-label-borders",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/vertical-lines",
+		"keywords": ["showVLineLabelBorder", "showLabelBorder"]
+	},
+	{
+		"title": "Customize Visual Properties",
+		"description": "To customize the visual properties of the vertical line, the following attributes are used:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/vertical-lines#customize-visual-properties",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/vertical-lines",
+		"keywords": ["color", "thickness", "alpha", "dashed", "dashLen", "dashGap"]
+	},
+	{
+		"title": "Legend",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/legend",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/legend",
+		"description": "A legend is a chart element that is used to display the series name of each dataset in multi-series/combination charts",
+		"keywords": []
+	},
+	{
+		"title": "Show/Hide the Legends",
+		"description": "To show/hide the legends, set the showLegend attribute to 1/0. The default value of this attribute is 1.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/legend#show-hide-the-legends",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/legend",
+		"keywords": ["showLegend"]
+	},
+	{
+		"title": "Show/Hide Data Plots via the Legend",
+		"description": "With FusionCharts Suite XT, show/hide the data plots belonging to a data series by clicking the corresponding legend icon. The legend interaction can also be disabled using interactiveLegend attribute. The default value of this attribute is 1. Let's check out a sample without the interactive legend.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/legend#show-hide-data-plots-via-the-legend",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/legend",
+		"keywords": ["interactiveLegend"]
+	},
+	{
+		"title": "Highlight a Data Series via the Legend",
+		"description": "Hover the mouse pointer over a legend text to highlight corresponding data plots in the chart. Whenever you do this, the chart reduces the opacity of the data plots belonging to other data series, making the one you hover on stand out prominently.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/legend#highlight-a-data-series-via-the-legend",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/legend",
+		"keywords": ["plotHighlightEffect"]
+	},
+	{
+		"title": "Set the Legend Position",
+		"description": "Use the following attributes to set legend position:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/legend#set-the-legend-position",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/legend",
+		"keywords": ["legendPosition", "legendAllowDrag"]
+	},
+	{
+		"title": "Configure Legend Icon Size",
+		"description": "Specify the legend icon size using the legendIconScale attribute. You can control the size of legend icon with values from 1 (100%) to 5 (500%).",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/legend#configure-legend-icon-size",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/legend",
+		"keywords": ["legendIconScale"]
+	},
+	{
+		"title": "Draw a Custom Legend Icon Shape",
+		"description": "Use the following attributes to draw a custom legend icon shape:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/legend#draw-a-custom-legend-icon-shape",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/legend",
+		"keywords": [
+			"drawCustomLegendIcon",
+			"legendIconBgColor",
+			"legendIconAlpha",
+			"legendIconBgAlpha",
+			"legendIconBorderThickness",
+			"legendIconBorderColor",
+			"legendIconSides",
+			"legendIconStartAngle"
+		]
+	},
+	{
+		"title": "Customize Legend Scroll Bar",
+		"description": "If you have multiple data items in a multi-series chart, the legend automatically displays a scroll bar. Use the legendScrollBgColor attribute to specify the background color of the scroll bar.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/legend#customize-legend-scroll-bar",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/legend",
+		"keywords": ["legendScrollBgColor"]
+	},
+	{
+		"title": "Reverse Legend Order",
+		"description": "Set the value of reverseLegend attribute to 1, to reverse the order of datasets in the legend.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/legend#reverse-legend-order",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/legend",
+		"keywords": ["reverseLegend"]
+	},
+	{
+		"title": "Hide Data Series upon Loading",
+		"description": "Set the value of initiallyHiddenattribute to 1, to hide the data plots of a data series initially, on chart load. The plots will become visible when you click on the name of the series in the legend. This attribute works from the dataset object level in JSON data, and by default takes the value of 0, thereby displaying data plots of every series when you load the chart.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/legend#hide-data-series-upon-loading",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/legend",
+		"keywords": ["initiallyHidden"]
+	},
+	{
+		"title": "Customize Legend Appearance",
+		"description": "Use the following attributes used to customize legend appearance:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/legend#customize-legend-appearance",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/legend",
+		"keywords": [
+			"legendBgColor",
+			"legendBgAlpha",
+			"legendBorderColor",
+			"legendBorderThickness",
+			"legendBorderAlpha",
+			"legendShadow",
+			"legendScrollBgColor",
+			"legendCaptionAlignment"
+		]
+	},
+	{
+		"title": "Customize Legend Font Cosmetics",
+		"description": "Use the following attributes to customize the legend font cosmetics:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/legend#customize-legend-font-cosmetics",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/legend",
+		"keywords": [
+			"legendItemFont",
+			"legendItemFontSize",
+			"legendItemFontColor",
+			"legendItemFontBold",
+			"legendItemHoverFontColor",
+			"legendCaption",
+			"legendCaptionFont",
+			"legendCaptionFontSize",
+			"legendCaptionFontColor",
+			"legendCaptionBold"
+		]
+	},
+	{
+		"title": "Annotations",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations",
+		"description": "Annotations are user-defined objects or shapes drawn on a chart. Annotations are often required to make interpretation of the chart easy for the end user.",
+		"keywords": []
+	},
+	{
+		"title": "How Annotations Work",
+		"description": "Annotations are defined inside the annotations object. This object has an array of groups, and each group element has a unique id. The groups object contains an array of items, each of which contains information on one specific annotation in the chart.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations#how-annotations-work",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations",
+		"keywords": []
+	},
+	{
+		"title": "Use Objects to Create Annotations",
+		"description": "Use the following objects to create annotations:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations#use-objects-to-create-annotations",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations",
+		"keywords": []
+	},
+	{
+		"title": "Add Different types of Annotations",
+		"description": "You can add the following types of annotations to your chart:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations#add-different-types-of-annotations",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations",
+		"keywords": []
+	},
+	{
+		"title": "Create Text Annotations",
+		"description": "Use the following attributes to text annotations, to add notes, labels, or any other contextual text information to charts.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations#create-text-annotations",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations",
+		"keywords": [
+			"id",
+			"type",
+			"x",
+			"y",
+			"font",
+			"fontSize",
+			"align",
+			"vAlign",
+			"bold",
+			"italic",
+			"color",
+			"alpha",
+			"bgColor",
+			"leftMargin",
+			"rotateText",
+			"wrap",
+			"wrapWidth",
+			"toX",
+			"toY",
+			"wrapHeight"
+		]
+	},
+	{
+		"title": "Create Image Annotations",
+		"description": "Use the following attributes to create image annotations:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations#create-image-annotations",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations",
+		"keywords": ["url", "xScale", "yScale"]
+	},
+	{
+		"title": "Create Shape Annotations",
+		"description": "You can draw annotations in any of the following shapes using FusionCharts Suite XT:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations#create-shape-annotations",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations",
+		"keywords": []
+	},
+	{
+		"title": "Adhoc Attributes",
+		"description": "Rectangle",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations#adhoc-attributes",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations",
+		"keywords": [
+			"radius",
+			"sides",
+			"thickness",
+			"yRadius",
+			"innerRadius",
+			"startAngle",
+			"endAngle",
+			"path",
+			"origW",
+			"origH",
+			"xShift",
+			"yShift",
+			"autoScale",
+			"constrainedScale",
+			"scaleText",
+			"scaleImages",
+			"grpXShift",
+			"grpYShift",
+			"showBelow",
+			"visible",
+			"showShadow",
+			"wrapText",
+			"link",
+			"fillColor",
+			"fillAlpha",
+			"fillRatio",
+			"fillAngle"
+		]
+	},
+	{
+		"title": "Positioning Annotations",
+		"description": "You can configure positions of annotations either during their creation or after rendering them on a chart/gauge. Position annotation items by setting the positioning attributes (x, y, toX, toY, radius, and so on) to the required coordinates.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations#positioning-annotations",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations",
+		"keywords": []
+	},
+	{
+		"title": "Absolute Values",
+		"description": "In this section, you will see how to position annotations using static values. The attributes used to position annotations are as follows:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations#absolute-values",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations",
+		"keywords": []
+	},
+	{
+		"title": "Use Macros",
+		"description": "Annotation macros are predefined variables you can use to dynamically position individual annotation items. Since macros assume values at runtime, you can use them with all annotation positioning attributes. That way, you can position annotations relative to chart/gauge elements, such as caption, legend, etc. For example, for an annotation item, if you set \"x\": \"$captionStartX\", x will take the value of the starting x-coordinate of the chart caption.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations#use-macros",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations",
+		"keywords": []
+	},
+	{
+		"title": "Group annotations",
+		"description": "You can group a number of annotation items together as one item. This is useful when there are multiple annotations on a chart and you have to configure common properties for all of them.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations#group-annotations",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations",
+		"keywords": []
+	},
+	{
+		"title": "Dynamically control annotations",
+		"description": "You can use methods available within FusionCharts Suite XT to create, update, set the visibility of, and delete annotation groups and items at runtime, with the FusionCharts API. This is especially helpful when you want to augment your charts with context sensitive information. For instance, you can show, hide, or update the color for an annotation group or item using the respective methods.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations#dynamically-control-annotations",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations",
+		"keywords": []
+	},
+	{
+		"title": "Real life use cases",
+		"description": "In the examples given below, you can see how annotations can be used in different scenarios.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations#real-life-use-cases",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations",
+		"keywords": []
+	},
+	{
+		"title": "Create a Collaborative Dashboard",
+		"description": "Click here to see a collaborative dashboard that is a complex and practical example of how to use annotations, to add more information to a chart.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations#create-a-collaborative-dashboard",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations",
+		"keywords": []
+	},
+	{
+		"title": "Annotation references",
+		"description": "In the following sections, you can see an exhaustive set of attributes and macros supported by annotations in FusionCharts Suite XT.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations#annotation-references",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations",
+		"keywords": []
+	},
+	{
+		"title": "General configuration attributes",
+		"description": "You can use the following attributes with the root annotations object, to globally configure generic aspects of annotations:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations#general-configuration-attributes",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations",
+		"keywords": []
+	},
+	{
+		"title": "Configure attributes for annotation groups",
+		"description": "You can uniformly configure all annotation items contained within an annotation group, by using a number of attributes, as detailed in the list below. Group attributes inherit default values from the ones defined as root-level annotation attributes.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations#configure-attributes-for-annotation-groups",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations",
+		"keywords": []
+	},
+	{
+		"title": "Configure attributes for annotation items",
+		"description": "You can segregate attributes for annotation items into two types, common (which work for all annotation types) and ad-hoc (which only work for certain annotation types).",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations#configure-attributes-for-annotation-items",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations",
+		"keywords": []
+	},
+	{
+		"title": "Use macros to position annotations",
+		"description": "Use the following macros to position annotations within charts and gauges:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations#use-macros-to-position-annotations",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations",
+		"keywords": []
+	},
+	{
+		"title": "Use sub-token macros to position annotations",
+		"description": "Use the following sub-token macros to position annotations with respect to datasets and axes:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations#use-sub-token-macros-to-position-annotations",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/annotations",
+		"keywords": []
+	},
+	{
+		"title": "Tick Marks",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tick-marks",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tick-marks",
+		"description": "Tick marks in gauges are calibration marks to help interpret reading. One show/hide tick marks,show tick mark values in decimals or show nth tick mark value",
+		"keywords": []
+	},
+	{
+		"title": "Show/Hide Tick Marks",
+		"description": "By default, the tick marks are displayed. To hide the tick marks set the showTickMarks attribute to 1. Refer to the code below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tick-marks#show-hide-tick-marks",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tick-marks",
+		"keywords": ["showTickMarks"]
+	},
+	{
+		"title": "Show/Hide the Tick Values",
+		"description": "By default, the tick values are displayed. To hide the tick values set the showTickValues attribute to 1. Refer to the code below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tick-marks#show-hide-the-tick-values",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tick-marks",
+		"keywords": ["showTickValues", "showLimits"]
+	},
+	{
+		"title": "Configure the Tick Value Position",
+		"description": "By default, tick marks and tick values are placed outside a gauge. In vertical gauges (like the vertical LED gauge), they are placed to the right of the gauge by default. Similarly, in horizontal gauges (like the horizontal LED gauge), they are placed below the gauge.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tick-marks#configure-the-tick-value-position",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tick-marks",
+		"keywords": ["placeTicksInside", "placeValuesInside"]
+	},
+	{
+		"title": "Display every nth Tick Mark Value",
+		"description": "FusionCharts allows you to show every n-th value, where the upper and lower limit of the scale is always displayed.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tick-marks#display-every-nth-tick-mark-value",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tick-marks",
+		"keywords": ["tickValueStep"]
+	},
+	{
+		"title": "Show Tick Values in Decimals",
+		"description": "You can configure the number of decimals and can also force the number of decimals on tick values.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tick-marks#show-tick-values-in-decimals",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tick-marks",
+		"keywords": ["tickValuDecimals", "forceTickValueDecimals"]
+	},
+	{
+		"title": "Configure Tick Mark and Tick Value Padding",
+		"description": "By defining the padding for tick mark and tick value, you can control the amount of space between the tick mark and the gauge, or between the tick values and tick marks.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tick-marks#configure-tick-mark-and-tick-value-padding",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tick-marks",
+		"keywords": ["tickMarkDistance", "tickValueDistance"]
+	},
+	{
+		"title": "Set the Number of Major and Minor Tick Marks",
+		"description": "By default, the number of major and minor ticks are automatically adjusted. You can opt to define the number of major and minor tick marks to be rendered on a gauge. To do so, the following attributes are used:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tick-marks#set-the-number-of-major-and-minor-tick-marks",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tick-marks",
+		"keywords": ["adjustTM", "majorTMNumber", "minorTMNumber"]
+	},
+	{
+		"title": "Configure Visuals of Tick Marks",
+		"description": "You can configure the color, transparency, height, and thickness of both, major and minor tick marks.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tick-marks#configure-visuals-of-tick-marks",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tick-marks",
+		"keywords": [
+			"majorTMColor",
+			"minorTMColor",
+			"majorTMAlpha",
+			"minorTMAlpha",
+			"majorTMHeight",
+			"minorTMHeight",
+			"majorTMThickness",
+			"minorTMThickness"
+		]
+	},
+	{
+		"title": "Add External Logo",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/loading-external-logo",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/loading-external-logo",
+		"description": "You can load external logos at runtime with can be GIF/JPEG/PNG or SWF files. This section talks about configuring and linking the logo to an external URL",
+		"keywords": []
+	},
+	{
+		"title": "Add an External Logo",
+		"description": "To add an external logo specify the URL of the logo using the logoURL attribute.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/loading-external-logo#add-an-external-logo",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/loading-external-logo",
+		"keywords": ["logoURL"]
+	},
+	{
+		"title": "Configure the External Logo",
+		"description": "To configure the external logo, the following attributes are used:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/loading-external-logo#configure-the-external-logo",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/loading-external-logo",
+		"keywords": ["logoAlpha", "logoScale", "logoPosition"]
+	},
+	{
+		"title": "Link Logo to an External URL",
+		"description": "To add an external link to the logo, specify the external link using the logoLink attribute.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/loading-external-logo#link-logo-to-an-external-url",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/loading-external-logo",
+		"keywords": ["logoLink"]
+	},
+	{
+		"title": "Chart Paddings and Margins",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-paddings-and-margins",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-paddings-and-margins",
+		"description": "FusionCharts Suite XT lets you manage the space around the canvas and within the chart by configuring chart paddings and margins.",
+		"keywords": []
+	},
+	{
+		"title": "Set Chart Margins",
+		"description": "Chart margin is the space between the chart border and the canvas border. You can set the chart margins on any one of the chart's four sides. To do so, the following attributes are used:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-paddings-and-margins#set-chart-margins",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-paddings-and-margins",
+		"keywords": [
+			"chartLeftMargin",
+			"chartTopMargin",
+			"chartRightMargin",
+			"chartBottomMargin"
+		]
+	},
+	{
+		"title": "Set Padding for Caption",
+		"description": "Set the amount of empty space between the sub-caption and the top of the chart canvas using the captionPadding attribute. Refer to the code below:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-paddings-and-margins#set-padding-for-caption",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-paddings-and-margins",
+		"keywords": ["captionPadding"]
+	},
+	{
+		"title": "Set Padding for Axes Names",
+		"description": "Set the axis name padding and axis value padding, to control the amount of space between the axes and the canvas. To do so, the following attributes are used:",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-paddings-and-margins#set-padding-for-axes-names",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-paddings-and-margins",
+		"keywords": ["xAxisNamePadding", "yAxisNamePadding"]
+	},
+	{
+		"title": "Set Padding for Axis Values",
+		"description": "Specify the amount of horizontal space between the left edge of the canvas and the y-axis values or trend line values (on left/right side) using the yAxisValuePadding attribute.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-paddings-and-margins#set-padding-for-axis-values",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-paddings-and-margins",
+		"keywords": ["yAxisValuePadding"]
+	},
+	{
+		"title": "Set Padding for Data Label",
+		"description": "Specify the vertical space between the canvas bottom edge and the data labels using the labelPadding attribute.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-paddings-and-margins#set-padding-for-data-label",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-paddings-and-margins",
+		"keywords": ["labelPadding"]
+	},
+	{
+		"title": "Set Padding for Data Value",
+		"description": "Specify the space between the columns/anchors and the value text boxes using the valuePadding attribute.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-paddings-and-margins#set-padding-for-data-value",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-paddings-and-margins",
+		"keywords": ["valuePadding"]
+	},
+	{
+		"title": "Set Canvas Padding",
+		"description": "For a line/area chart, canvas padding is the space between the canvas border and the position where the line/area chart begins. Specify the amount of gap using the canvasPadding attribute.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-paddings-and-margins#set-canvas-padding",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/chart-paddings-and-margins",
+		"keywords": ["canvasPadding"]
+	},
+	{
+		"title": "Toolbar",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/toolbar",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/toolbar",
+		"description": "The advantage of toolbar is it manages all the UI action elements centrally, providing a uniform look and a better meaningful and logical grouping.",
+		"keywords": ["checkBoxColor"]
+	},
+	{
+		"title": "Drill-down",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/drill-down",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/drill-down",
+		"description": "Using FusionCharts Suite XT, you can create endless levels of drilldown. It has been kept very generic to accommodate all types of requirements.",
+		"keywords": []
+	},
+	{
+		"title": "Simple links",
+		"description": "Drill-down to open simple URLs or call JavaScript functions (defined within the same page), which can open in the same page, a new page, or a specified frame/popup window. You can also use these links to render the entire chart as a hotspot.In the section below, you can see how to define simple links that open in different target locations.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/drill-down#simple-links",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/drill-down",
+		"keywords": ["link", "unescapeLinks"]
+	},
+	{
+		"title": "Chart links (Linked Charts)",
+		"description": "Drill down to detailed linked charts that show data at different levels of detail.",
+		"link": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/drill-down#chart-links-linked-charts-",
+		"link_without_anchor": "https://www.fusioncharts.com/dev/chart-guide/chart-configurations/drill-down",
+		"keywords": ["jsonurl", "xmlurl", "dataformat", "datasource"]
+	}
+]

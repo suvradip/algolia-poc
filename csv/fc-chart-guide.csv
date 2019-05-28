@@ -1,0 +1,99 @@
+/chart-guide/standard-charts/line-area-and-column-charts	$	singe series
+/chart-guide/standard-charts/line-area-and-column-charts#column-2d-chart	$	singe series, column2d, column
+/chart-guide/standard-charts/line-area-and-column-charts#column-3d-chart	$	singe series, column3d, column, 3d
+/chart-guide/standard-charts/line-area-and-column-charts#bar-2d-chart	$	singe series, bar2d, bar
+/chart-guide/standard-charts/line-area-and-column-charts#bar-3d-chart	$	singe series, bar3d, bar, 3d
+/chart-guide/standard-charts/line-area-and-column-charts#line-chart	$	singe series, line, line2d
+/chart-guide/standard-charts/line-area-and-column-charts#area-chart	$	singe series, area, area2d
+/chart-guide/standard-charts/line-area-and-column-charts#plot-trend-elements	$
+/chart-guide/standard-charts/line-area-and-column-charts#plot-vertical-line-elements	$
+/chart-guide/standard-charts/line-area-and-column-charts#change-chart-type	$
+/chart-guide/standard-charts/line-area-and-column-charts#data-skipping	$
+
+/chart-guide/standard-charts/pie-and-doughnut-charts	$	singe series
+/chart-guide/standard-charts/pie-and-doughnut-charts#pie-2d-chart	$	singe series, pie, pie2d
+/chart-guide/standard-charts/pie-and-doughnut-charts#pie-3d-chart	$	singe series, pie, pie3d, 3d
+/chart-guide/standard-charts/pie-and-doughnut-charts#doughnut-2d-chart	$	singe series, doughnut, doughnut2d
+/chart-guide/standard-charts/pie-and-doughnut-charts#doughnut-3d-chart	$	singe series, doughnut, doughnut3d, 3d
+/chart-guide/standard-charts/pie-and-doughnut-charts#configure-the-animation-direction	$
+/chart-guide/standard-charts/pie-and-doughnut-charts#show-percent-values-and-actual-values	$
+/chart-guide/standard-charts/pie-and-doughnut-charts#customize-the-center-label-for-a-doughnut-chart	$
+/chart-guide/standard-charts/pie-and-doughnut-charts#enable-single-slice-slicing	$
+/chart-guide/standard-charts/pie-and-doughnut-charts#disable-smart-labels-and-lines	$
+/chart-guide/standard-charts/pie-and-doughnut-charts#customize-smart-lines	$
+/chart-guide/standard-charts/pie-and-doughnut-charts#configuring-the-label-distance-and-clearance	$
+/chart-guide/standard-charts/pie-and-doughnut-charts#skip-overlap-labels	$
+/chart-guide/standard-charts/pie-and-doughnut-charts#customize-pie-radius	$
+/chart-guide/standard-charts/pie-and-doughnut-charts#set-the-starting-angle	$
+/chart-guide/standard-charts/pie-and-doughnut-charts#slice-a-pie-doughnut	$
+/chart-guide/standard-charts/pie-and-doughnut-charts#configure-the-slicing-distance	$
+/chart-guide/standard-charts/pie-and-doughnut-charts#configure-the-bevel-effect	$
+
+/chart-guide/standard-charts/multi-series-charts	$	multie series
+/chart-guide/standard-charts/multi-series-charts#multi-series-column-2d-chart	$	multie series, mscolumn2d
+/chart-guide/standard-charts/multi-series-charts#multi-series-column-3d-chart	$	multie series, mscolumn2d, 3d
+/chart-guide/standard-charts/multi-series-charts#multi-series-bar-2d-chart	$	multie series, masbar2d
+/chart-guide/standard-charts/multi-series-charts#multi-series-bar-3d-chart	$	multie series, masbar3d, 3d
+/chart-guide/standard-charts/multi-series-charts#multi-series-line-chart	$	multie series, msline
+/chart-guide/standard-charts/multi-series-charts#multi-series-area-chart	$	multie series, msarea
+	$
+/chart-guide/standard-charts/overlapped-column-and-bar-charts	$
+/chart-guide/standard-charts/overlapped-column-and-bar-charts#overlapped-column-2d-chart	$
+/chart-guide/standard-charts/overlapped-column-and-bar-charts#overlapped-bar-2d-chart	$
+
+/chart-guide/standard-charts/combination-charts	$	combination
+/chart-guide/standard-charts/combination-charts#2d-single-y-axis-combination-chart	$
+/chart-guide/standard-charts/combination-charts#3d-single-y-axis-combination-chart	$
+/chart-guide/standard-charts/combination-charts#2d-dual-y-axis-combination-chart	$
+/chart-guide/standard-charts/combination-charts#column-3d-line-single-y-axis-chart	$
+/chart-guide/standard-charts/combination-charts#column-3d-line-dual-y-axis-chart	$
+/chart-guide/standard-charts/combination-charts#stacked-column-2d-line-single-y-axis-chart	$
+/chart-guide/standard-charts/combination-charts#stacked-column-3d-line-single-y-axis-chart	$
+/chart-guide/standard-charts/combination-charts#stacked-column-3d-line-dual-y-axis-chart	$
+/chart-guide/standard-charts/combination-charts#multi-series-stacked-column-2d-line-dual-y-axis-chart	$
+/chart-guide/standard-charts/combination-charts#plot-trend-elements	$
+/chart-guide/standard-charts/combination-charts#placing-the-secondary-axis-on-the-left	$
+	$
+/chart-guide/standard-charts/stacked-charts	$	stacked
+/chart-guide/standard-charts/stacked-charts#stacked-column-2d-chart	$	stacked, stackedcolumn2d
+/chart-guide/standard-charts/stacked-charts#stacked-column-3d-chart	$	stacked, stackedcolumn3d, 3d
+/chart-guide/standard-charts/stacked-charts#stacked-area-2d-chart	$	stacked, stackedarea2d
+/chart-guide/standard-charts/stacked-charts#stacked-bar-2d-chart	$	stacked, stackedbar2d
+/chart-guide/standard-charts/stacked-charts#stacked-bar-3d-chart	$	stacked, stackedbar3d, 3d
+/chart-guide/standard-charts/stacked-charts#display-the-cumulative-sum	$
+/chart-guide/standard-charts/stacked-charts#create-100-stacked-charts	$
+/chart-guide/standard-charts/stacked-charts#show-percent-values-in-tool-tips	$
+	$
+/chart-guide/standard-charts/scroll-charts	$
+/chart-guide/standard-charts/scroll-charts#scroll-column-2d-chart	$
+/chart-guide/standard-charts/scroll-charts#scroll-line-2d-chart	$
+/chart-guide/standard-charts/scroll-charts#scroll-area-2d-chart	$
+/chart-guide/standard-charts/scroll-charts#scroll-stacked-column-2d-chart	$
+/chart-guide/standard-charts/scroll-charts#scroll-combination-2d-chart	$
+/chart-guide/standard-charts/scroll-charts#scroll-combination-2d-dual-y-axis-chart	$
+/chart-guide/standard-charts/scroll-charts#configure-the-number-of-visible-data-plots	$
+/chart-guide/standard-charts/scroll-charts#render-a-scroll-bar-with-gradient-effect	$
+/chart-guide/standard-charts/scroll-charts#customizing-the-scroll-bar	$
+
+/chart-guide/standard-charts/bubble-and-xy-charts	$
+/chart-guide/standard-charts/bubble-and-xy-charts#scatter-chart	$
+/chart-guide/standard-charts/bubble-and-xy-charts#bubble-charts	$
+/chart-guide/standard-charts/bubble-and-xy-charts#display-value-labels-on-bubbles	$
+/chart-guide/standard-charts/bubble-and-xy-charts#segment-the-x-axis-into-categorical-zones	$
+/chart-guide/standard-charts/bubble-and-xy-charts#configure-x-axis-labels	$
+/chart-guide/standard-charts/bubble-and-xy-charts#configure-the-x-axis-vertical-divisional-lines	$
+/chart-guide/standard-charts/bubble-and-xy-charts#connect-scatter-plots-by-a-line	$
+/chart-guide/standard-charts/bubble-and-xy-charts#draw-regression-lines	$
+/chart-guide/standard-charts/bubble-and-xy-charts#draw-quadrants	$
+/chart-guide/standard-charts/bubble-and-xy-charts#display-quadrant-labels	$
+/chart-guide/standard-charts/bubble-and-xy-charts#customize-quadrant-labels	$
+/chart-guide/standard-charts/bubble-and-xy-charts#customize-quadrant-lines	$
+
+/chart-guide/standard-charts/pareto-charts	$
+/chart-guide/standard-charts/pareto-charts#pareto-2d	$	singe series, pareto2d
+/chart-guide/standard-charts/pareto-charts#pareto-3d	$	singe series, pareto3d, 3d
+/chart-guide/standard-charts/pareto-charts#display-values-for-the-line-series	$
+/chart-guide/standard-charts/pareto-charts#customize-the-line-dataset	$
+/chart-guide/standard-charts/pareto-charts#hide-secondary-axis-values	$
+
+/chart-guide/standard-charts/marimekko-chart	$	multie series, merimekko
