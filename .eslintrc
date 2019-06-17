@@ -1,0 +1,18 @@
+{
+   "extends": ["airbnb", "prettier"],
+   "plugins": ["prettier"],
+   "globals": {},
+   "env": {
+      "browser": true
+   },
+   "rules": {
+      "prettier/prettier": [
+         "error",
+         {
+            "usePrettierrc": true
+         }
+      ],
+      "no-debugger": "off",
+      "no-console": "off"
+   }
+}

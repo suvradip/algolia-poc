@@ -1,23 +1,29 @@
-const fs = require("fs");
-const path = require("path");
-const data = require("../algolia");
+const fs = require('fs');
+const path = require('path');
+const data = require('../output/result-with-keywords.json');
 
 let position = 0;
 let size = 0;
 
-const result = data.filter((a, i) => i !== 1480);
-// data.forEach((element, index) => {
-// 	if (element.description.length > size) {
-// 		size = element.description.length;
-// 		position = index;
-// 	}
-// });
+data.forEach((element, index) => {
+   if (element.description.length > size) {
+      size = element.description.length;
+      position = index;
+   }
+});
 
-// console.log(position, size);
+const result = data.filter((a, i) => i !== position);
+
 // console.log(data[position]);
 
+console.log(
+   `postition: ${position} | size - ${size} | oldCount - ${data.length} | finalCount - ${
+      result.length
+   }`
+);
+
 fs.writeFileSync(
-	path.resolve(__dirname, "../algolia.json"),
-	JSON.stringify(result, null, 4),
-	"utf8"
+   path.resolve(__dirname, '../output/result-with-keywords.json'),
+   JSON.stringify(result, null, 4),
+   'utf8'
 );

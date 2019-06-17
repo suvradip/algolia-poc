@@ -99,5 +99,6 @@ typings/
 # Ignore all local history of files
 .history
 result.json
+output/
 
 # End of https://www.gitignore.io/api/node,visualstudiocode
