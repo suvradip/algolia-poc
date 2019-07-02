@@ -37,6 +37,21 @@ const storedLinks = require('./datasource.json');
                return { name: 'FusionCharts Suite XT', order: 1 };
             }
 
+            function getHierarchy() {
+               const items = [];
+               let order;
+               document.querySelectorAll('#mainTreeContainer .expanded').forEach(el => {
+                  const requiredElement = el.nextElementSibling;
+                  if (!order) order = requiredElement.getAttribute('data-order') * 1;
+                  items.push(requiredElement.innerText);
+               });
+
+               return {
+                  order,
+                  content: items.join(' > '),
+               };
+            }
+
             const { href } = window.location;
             const metaDescription = document.querySelector('meta[name=description]');
             const pageDescription = document.querySelector('.scrollspy-example p:first-of-type');
@@ -48,11 +63,13 @@ const storedLinks = require('./datasource.json');
             const productInfo = abouProduct(href);
 
             const pageData = {
+               description,
+               hierarchyOrder: getHierarchy().order,
+               hierarchy: getHierarchy().content,
                titlePriority: 0,
                title: (title && title.innerText) || '',
                link: `${href + (title && title.id ? `#${title.id}` : '')}`,
                link_without_anchor: href,
-               description,
                keywords: [],
                productName: productInfo.name,
                productOrder: productInfo.order,
@@ -62,19 +79,27 @@ const storedLinks = require('./datasource.json');
             data.push(pageData);
 
             const hTags = ['H1', 'H2', 'H3', 'H4', 'H5'];
-            document.querySelectorAll('h2,h3,h4,h5').forEach(h => {
-               const titlePriority = hTags.indexOf(h.tagName);
-               data.push({
-                  titlePriority,
-                  title: h.innerText.split('#').join(''),
-                  description: (h.nextElementSibling && h.nextElementSibling.innerText) || '',
-                  link: `${href + (h && h.id ? `#${h.id}` : '')}`,
-                  link_without_anchor: href,
-                  keywords: [],
-                  productName: productInfo.name,
-                  productOrder: productInfo.order,
+            const region = document.querySelector('.page-content');
+
+            if (region) {
+               region.querySelectorAll('h2,h3,h4,h5').forEach(h => {
+                  const titlePriority = hTags.indexOf(h.tagName);
+                  const titleExtrace = h.innerText.split('#').join('');
+
+                  data.push({
+                     titlePriority,
+                     hierarchyOrder: getHierarchy().order,
+                     hierarchy: getHierarchy().content,
+                     title: titleExtrace,
+                     description: (h.nextElementSibling && h.nextElementSibling.innerText) || '',
+                     link: `${href + (h && h.id ? `#${h.id}` : '')}`,
+                     link_without_anchor: href,
+                     keywords: [],
+                     productName: productInfo.name,
+                     productOrder: productInfo.order,
+                  });
                });
-            });
+            }
 
             return data;
          });
@@ -82,8 +107,8 @@ const storedLinks = require('./datasource.json');
          return Result;
       } catch (error) {
          await browser.close();
-         process.exit();
-         return console.log(error);
+         console.error(error);
+         return process.exit();
       }
    };
 
@@ -94,7 +119,7 @@ const storedLinks = require('./datasource.json');
       let start = pointer;
       const link = `http://localhost:3000${storedLinks[start]}`;
 
-      spinner.text = `${start}/${totalLinks - 1} : ${link}`;
+      spinner.text = `${start}/${totalLinks - 1} : ${link}\n`;
 
       const data = await getData(link);
 
@@ -110,7 +135,6 @@ const storedLinks = require('./datasource.json');
             'utf8'
          );
          await browser.close();
-         debugger;
          await stichKeywords(resultSet);
          process.exit();
       }

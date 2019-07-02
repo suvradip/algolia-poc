@@ -1,8 +1,9 @@
 const csv = require('csv-parser');
 const path = require('path');
 const fs = require('fs');
+// const dataTempo = require('../output/result.json');
 
-module.exports = (prevData = []) =>
+const operation = (prevData = []) =>
    new Promise((resolve, reject) => {
       const results = [];
       const dummy = {};
@@ -29,8 +30,6 @@ module.exports = (prevData = []) =>
                   }
                });
 
-               console.log(results.length);
-
                const data = prevData.map(a => {
                   const obj = { ...a };
                   const link = obj.link.replace('http://localhost:3000', '');
@@ -40,9 +39,14 @@ module.exports = (prevData = []) =>
                   return obj;
                });
 
+               let finalData = JSON.stringify(data, null, 4);
+               finalData = finalData.replace(
+                  /http:\/\/localhost:3000/gi,
+                  'https://www.fusioncharts.com/dev'
+               );
                fs.writeFileSync(
                   path.resolve(__dirname, '../output/result-with-keywords.json'),
-                  JSON.stringify(data, null, 4),
+                  finalData,
                   'utf8'
                );
 
@@ -53,3 +57,7 @@ module.exports = (prevData = []) =>
          reject(error);
       }
    });
+
+module.exports = operation;
+
+// operation(dataTempo);

@@ -5,8 +5,7 @@
    "main": "index.js",
    "scripts": {
       "start": "node src/index.js",
-      "parse": "node src/parse",
-      "stich": "node src/stich"
+      "filter": "node src/filter"
    },
    "keywords": [],
    "author": "",

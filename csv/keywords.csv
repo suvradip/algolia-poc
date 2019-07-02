@@ -1,10 +1,10 @@
 /chart-guide/standard-charts/line-area-and-column-charts,"single series, column2d, column"
-/chart-guide/standard-charts/line-area-and-column-charts#column-2d-chart,"single series, column3d, column"
-/chart-guide/standard-charts/line-area-and-column-charts#column-3d-chart,"single series, bar2d, bar"
+/chart-guide/standard-charts/line-area-and-column-charts#column-2d-chart,"single series, column2d, column"
+/chart-guide/standard-charts/line-area-and-column-charts#column-3d-chart,"single series, column3d, column"
 /chart-guide/standard-charts/line-area-and-column-charts#bar-2d-chart,"single series, bar2d, bar"
-/chart-guide/standard-charts/line-area-and-column-charts#bar-3d-chart,"single series, line, line2d"
-/chart-guide/standard-charts/line-area-and-column-charts#line-chart,"single series, area, area2d"
-/chart-guide/standard-charts/line-area-and-column-charts#area-chart,single series
+/chart-guide/standard-charts/line-area-and-column-charts#bar-3d-chart,"single series, bar, bar3d"
+/chart-guide/standard-charts/line-area-and-column-charts#line-chart, "single series, line, line2d"
+/chart-guide/standard-charts/line-area-and-column-charts#area-chart,"single series, area, area2d"
 /chart-guide/standard-charts/line-area-and-column-charts#plot-trend-elements,
 /chart-guide/standard-charts/line-area-and-column-charts#plot-vertical-line-elements,
 /chart-guide/standard-charts/line-area-and-column-charts#change-chart-type,
