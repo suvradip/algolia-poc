@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const data = require('../output/result-with-keywords.json');
+const data = require('../temp/result-with-keywords.json');
 
 let position = 0;
 let size = 0;

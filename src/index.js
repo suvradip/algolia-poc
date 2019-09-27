@@ -2,18 +2,45 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
 const ora = require('ora');
-
+const axios = require('axios');
 const stichKeywords = require('./parse');
-const storedLinks = require('./datasource.json');
 
 (async () => {
    const spinner = ora('Loading process').start();
+
+   /* const storedLinks = await axios.get('http://localhost:3000/portal/sidebar/').then(response => {
+      const links = [];
+      function extract(children) {
+         children.forEach(item => {
+            if (item.path) {
+               links.push(item.path);
+            } else if (item.children && item.children.length > 0) {
+               extract(item.children);
+            }
+         });
+      }
+
+      extract(response.data);
+      return links;
+	}); */
+
+   const storedLinks = [
+      '/university/creating-a-realtime-bitcoin-ticker-in-javascript',
+      '/university/sales-dashboard-using-react',
+      '/university/learn-how-to-export-a-dashboard-fusionexport',
+      '/university/create-a-funnel-chart-using-fusioncharts-and-dotnet',
+      '/university/create-funnel-chart-fusioncharts-mvc-dotnet',
+      '/university/create-a-column-chart-using-fusioncharts-and-dotnet',
+      '/university/render-fusioncharts-mvc-using-dotnet',
+      '/university/create-combination-chart-using-fusioncharts-and-dotnetmvc',
+      '/university/create-combination-chart-dotnet-webform',
+   ];
 
    const browser = await puppeteer.launch();
    const page = await browser.newPage();
 
    page.on('error', async err => {
-      console.log('Error occuered');
+      console.log('Error occurred');
       console.error(err);
       await browser.close();
       process.exit();
@@ -21,10 +48,13 @@ const storedLinks = require('./datasource.json');
 
    const getData = async link => {
       try {
-         await page.goto(link);
+         await page.goto(link, {
+            timeout: 600000,
+            waitUntil: 'networkidle2',
+         });
 
          const Result = await page.evaluate(() => {
-            function abouProduct(param) {
+            function aboutProduct(param) {
                if (param.indexOf('fusioncharts-aspnet-visualization/') > -1) {
                   return { name: 'FusionCharts.NET', order: 4 };
                }
@@ -40,7 +70,7 @@ const storedLinks = require('./datasource.json');
             function getHierarchy() {
                const items = [];
                let order;
-               document.querySelectorAll('#mainTreeContainer .expanded').forEach(el => {
+               document.querySelectorAll('#tree .expanded').forEach(el => {
                   const requiredElement = el.nextElementSibling;
                   if (!order) order = requiredElement.getAttribute('data-order') * 1;
                   items.push(requiredElement.innerText);
@@ -60,7 +90,7 @@ const storedLinks = require('./datasource.json');
                (pageDescription && pageDescription.innerText) ||
                '';
             const title = document.querySelector('h1');
-            const productInfo = abouProduct(href);
+            const productInfo = aboutProduct(href);
 
             const pageData = {
                description,
@@ -81,17 +111,26 @@ const storedLinks = require('./datasource.json');
             const hTags = ['H1', 'H2', 'H3', 'H4', 'H5'];
             const region = document.querySelector('.page-content');
 
+            function getDescription(target) {
+               const { nextElementSibling } = target;
+               if (nextElementSibling) {
+                  const text = nextElementSibling.innerText || '';
+                  return text.substr(0, 4000);
+               }
+               return '';
+            }
+
             if (region) {
                region.querySelectorAll('h2,h3,h4,h5').forEach(h => {
                   const titlePriority = hTags.indexOf(h.tagName);
-                  const titleExtrace = h.innerText.split('#').join('');
+                  const titleExtract = h.innerText.split('#').join('');
 
                   data.push({
                      titlePriority,
                      hierarchyOrder: getHierarchy().order,
                      hierarchy: getHierarchy().content,
-                     title: titleExtrace,
-                     description: (h.nextElementSibling && h.nextElementSibling.innerText) || '',
+                     title: titleExtract,
+                     description: getDescription(h),
                      link: `${href + (h && h.id ? `#${h.id}` : '')}`,
                      link_without_anchor: href,
                      keywords: [],
@@ -130,7 +169,7 @@ const storedLinks = require('./datasource.json');
          await run(start);
       } else {
          fs.writeFileSync(
-            path.resolve(__dirname, '../output/result.json'),
+            path.resolve(__dirname, '../temp/result.json'),
             JSON.stringify(resultSet, null, 4),
             'utf8'
          );

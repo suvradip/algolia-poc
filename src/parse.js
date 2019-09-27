@@ -45,7 +45,7 @@ const operation = (prevData = []) =>
                   'https://www.fusioncharts.com/dev'
                );
                fs.writeFileSync(
-                  path.resolve(__dirname, '../output/result-with-keywords.json'),
+                  path.resolve(__dirname, '../temp/result-with-keywords.json'),
                   finalData,
                   'utf8'
                );

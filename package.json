@@ -5,13 +5,17 @@
    "main": "index.js",
    "scripts": {
       "start": "node src/index.js",
-      "filter": "node src/filter"
+      "filter": "node src/filter",
+      "upload": "node src/upload"
    },
    "keywords": [],
    "author": "",
    "license": "ISC",
    "dependencies": {
+      "algoliasearch": "^3.34.0",
+      "axios": "^0.19.0",
       "csv-parser": "^2.3.0",
+      "dotenv": "^8.1.0",
       "ora": "^3.4.0",
       "puppeteer": "^1.16.0"
    },
